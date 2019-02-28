@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Sign Up </title>
+</head>
+
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a href="https://revature.com/" class="pull-left"><img src="Revature.png" width="20%"></a>
+                    <a class="navbar-brand" href="#">Sign-Up Today!</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="intro.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="SignUp.html">Sign Up</a>
+                        </div>
+                    </div>
+                </nav>
+        <u>
+            <h1 id="revature"><img src="signup.png" alt="Revature" width="10%">Revature Sign-Up</h1>
+        </u>
+        <h3>Join Today and Be a Learning Animal!</h3>
+    </header>
+
+    <div class="container">
+        <form id="signup" action="" method="get">
+            <div class="row align-items-start">
+                <div class="col-sm-6">
+                    <fieldset>
+                        <legend> Sign-Up Required </legend>
+                        <label for="firstname"> First Name:</label><input type="text" name="firstname"
+                            placeholder="First Name">
+                        <label for="lastname"> Last Name:</label><input type="text" name="firstname"
+                            placeholder="Last Name"><br>
+                        <label for="phonenum">Phone Number:</label><input type="tel" pattern="/^\d{9}|\d{10}$/"
+                            name="phonenum" placeholder=" 9 or 10 Digit #">
+                        <label for="email"> E-mail Address:</label><input type="email" name="email"
+                            placeholder="Enter your email"><br>
+                    </fieldset>
+                </div>
+
+                <div class="col-sm-6">
+                    <fieldset>
+                        <legend> Personal Info.</legend>
+                        <label for="sex">Sex:</label>
+                        <select name="sex">
+                            <option value="" selected disabled hidden>Choose here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="other">Prefer Not to Answer</option>
+                        </select><br>
+                        <label for="age">Age:</label><input type="number" name="age" id="age" min="18" max="100"
+                            placeholder=21><br>
+                        <label for="faveCandy"> Favorite Candy: </label>
+                        <div class="candy">
+                            <input type="radio" name="faveCandy" id="Snickers">Snickers</input>
+                            <input type="radio" name="faveCandy" id="Gummy">Gummy Bears</input>
+                            <input type="radio" name="faveCandy" id="Twix">Twix</input>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="row justify-content-center" id="social">
+            <a href="https://twitter.com/WeAreRevature?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="twitter.png" alt="Twitter" width="60px"></a>
+            <a href="https://www.linkedin.com/company/revature/">
+                <img src="linkedin.png" alt="LinkedIn" width="60px"></a>
+            <a href="https://www.facebook.com/revature/">
+                <img src="facebook.png" alt="Facebook" width="60px"></a>
+        </div>
+    </footer>
+
+    </div>
+    <!--Scripts at end so that page may be displayed first followed by the JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Create sign-up page -->

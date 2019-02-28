@@ -1,0 +1,9 @@
+#modaltext {
+    background-color: azure;
+    color:rgb(31, 85, 104);
+    text-align: center;
+}
+
+#modalcontent {
+    background-color: salmon;
+}
