@@ -8,6 +8,7 @@ challenge_fibonacci = function (n) {
     while (n > 0) {
         temp = a;
         a = a + b;
+        //console.log(b);
         b = temp;
         n--;
     }
