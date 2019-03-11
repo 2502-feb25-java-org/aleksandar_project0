@@ -7,13 +7,13 @@ const submitBtn = document.querySelector('form button');
 
 
 // Create an instance of a db object for us to store the open database in
-let db;
+var db;
 
 //called when window's load event fires
 window.onload = function () {
     // Open our database; it is created if it doesn't already exist
     // (see onupgradeneeded below)
-    let request = window.indexedDB.open('notes', 1);
+    var request = window.indexedDB.open('notes', 1);
     // onerror handler signifies that the database didn't open successfully
     request.onerror = function () {
         console.log('Database failed to open');
@@ -34,15 +34,15 @@ window.onload = function () {
 // Setup the database tables if this has not already been done
 request.onupgradeneeded = function(e) {
     // Grab a reference to the opened database
-    let db = e.target.result;
+    var db = e.target.result;
   
     // Create an objectStore to store our notes in (basically like a single table)
     // including a auto-incrementing key
-    let objectStore = db.createObjectStore('notes', { keyPath: 'id', autoIncrement:true });
+    var objectStore = db.createObjectStore('notes', { keyPath: 'id', autoIncrement:true });
   
     // Define what data items the objectStore will contain
     objectStore.createIndex('title', 'title', { unique: false });
     objectStore.createIndex('body', 'body', { unique: false });
   
-    console.log('Database setup complete');
+    console.log('Database setup compvare');
   };
