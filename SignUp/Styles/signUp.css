@@ -1,5 +1,9 @@
 body{
-	background-color: azure;
+  background-color: azure;
+}
+
+label {
+  font-size: 20px;
 }
 
 #revature{
