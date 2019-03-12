@@ -21,7 +21,6 @@ input[type=text], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -30,7 +29,6 @@ input[type=email], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -39,7 +37,6 @@ input[type=tel], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -50,7 +47,6 @@ input[type=number], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    unit-sizing: border-unit;
     resize: vertical;
   }
 
