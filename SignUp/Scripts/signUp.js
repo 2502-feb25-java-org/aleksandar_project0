@@ -37,6 +37,7 @@ function load() {
     getRadio("faveCandy"); //radio button is simply storing as "on"
     getStore("email");
     getStore("phonenum");
+    getStore("address");
 }
 
 
