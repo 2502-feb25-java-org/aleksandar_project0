@@ -2,13 +2,13 @@
 <html lang=en-US>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="./Styles/signUp.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="./Styles/signUp.css">
-     <!-- Places API-->
-     <script type="text/javascript"
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA&libraries=places"></script>
+    <!-- Places API-->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA&libraries=places"></script>
     <meta charset="utf-8">
     <meta id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Sign Up </title>
@@ -16,10 +16,12 @@
 
 <body onload="load();">
     <header>
-            <script src = "./Scripts/navbar.js"></script>
-    
+        <script src="./Scripts/navbar.js"></script>
+
         <h3 class="text-center">Join Today and Be a Learning Animal!</h3>
     </header>
+
+
     <div class="vertical-center">
         <div class="container">
             <form id="signup" action="#">
@@ -41,21 +43,21 @@
                                     Address:</span></label><input type="email" id="email" placeholder="Enter your email"
                                 oninput="store();" required><br>
 
-                             <!-- Using Places API for Address Autocomplete--> 
-                             <label for="address"> <span class="badge badge-pill badge-info">
-                                Address:</span></label>  
-                            <input type="text" id="address" onchange="store();" required/>
+                            <!-- Using Places API for Address Autocomplete-->
+                            <label for="address"> <span class="badge badge-pill badge-info">
+                                    Address:</span></label>
+                            <input type="text" id="address" onchange="store();" required />
                             <script>
                                 var input = document.getElementById('address');
                                 var autocomplete = new google.maps.places.Autocomplete(input, { types: ['(cities)'] });
                                 google.maps.event.addListener(autocomplete, 'place_changed', function () {
                                     var place = autocomplete.getPlace();
 
-                                placeObj = JSON.stringify(place);
-                                formattedObj = JSON.parse(placeObj);
-                                formatted = formattedObj.formatted_address;
-                                storePlace(formatted);
-                                //storePlace(place);
+                                    placeObj = JSON.stringify(place);
+                                    formattedObj = JSON.parse(placeObj);
+                                    formatted = formattedObj.formatted_address;
+                                    storePlace(formatted);
+                                    //storePlace(place);
                                 })
                             </script>
 
@@ -84,7 +86,7 @@
                                 <input type="radio" name="faveCandy" id="Twix" oninput="storeRadio();">Twix
                             </div>
                         </fieldset>
-                        <input type="submit" class = "button" value="Submit">
+                        <input type="submit" class="button" value="Submit">
                         <input type="reset" value="Reset">
                     </div>
                 </div>

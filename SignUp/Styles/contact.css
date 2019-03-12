@@ -1,5 +1,5 @@
 body{
-    background-color: #25274d;
+    background-color: azure;
 }
 .contact{
     padding: 4%;
@@ -29,12 +29,18 @@ body{
 .contact-form label{
     font-weight:600;
 }
-.contact-form button{
-    background: #25274d;
-    color: #fff;
-    font-weight: 600;
-    width: 25%;
-}
+ /* Style the submit button */
+ input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    padding: 12px 20px;
+    border: rounded;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  
 .contact-form button:focus{
     box-shadow:none;
 }
