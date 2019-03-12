@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./Styles/logIn.css">
     <title>Revature Log-In</title>
 </head>
@@ -15,8 +16,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light stick-top">
-        <a href="https://revature.com/" class="pull-left"><img src="./Media/Revature.png" alt="RevImg"
-                width="20%"></a>
+        <a href="https://revature.com/" class="pull-left"><img src="./Media/Revature.png" alt="RevImg" width="20%"></a>
         <a class="navbar-brand" href="#">Sign-Up Today!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
             </div>
 
             <!-- Login Form -->
-            <form onSubmit = "return confirmLogIn();">
+            <form onSubmit="return confirmLogIn();">
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
                 <input type="submit" class="fadeIn fourth" value="Log In">
@@ -50,43 +50,46 @@
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a>
+                <a class="underlineHover" data-toggle="tooltip" data-placement="right" 
+                title="login:secretsnake 
+                password:revhero"> Forgot Password?</a>
             </div>
 
         </div>
     </div>
 
 
- <!-- Footer-->
- <footer class="page-footer font-small unique-color-dark pt-4 fixed-bottom">
+    <!-- Footer-->
+    <footer class="page-footer font-small unique-color-dark pt-4 fixed-bottom">
         <div class="container-fluid padding">
 
-               <!-- Footer Elements -->
+            <!-- Footer Elements -->
             <ul class="list-unstyled list-inline text-center">
                 <li class="list-inline-item">
                     <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/revature/">
-                        <em class="fab fa-facebook-f" > </em>
+                        <em class="fab fa-facebook-f"> </em>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/WeAreRevature?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <a class="btn-floating btn-tw mx-1"
+                        href="https://twitter.com/WeAreRevature?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                         <em class="fab fa-twitter"> </em>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1"  href="https://www.linkedin.com/company/revature/">
+                    <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/company/revature/">
                         <em class="fab fa-linkedin-in"> </em>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1" href = "https://www.instagram.com/teamrevature/">
+                    <a class="btn-floating btn-li mx-1" href="https://www.instagram.com/teamrevature/">
                         <em class="fab fa-instagram "> </em>
                     </a>
                 </li>
                 </li>
             </ul>
         </div>
-
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a>
 
         <div class="footer-copyright text-center py-3">© 2019 Copyright:
             <a href="**"> Revature.com</a>
@@ -94,8 +97,13 @@
 
     </footer>
 
-
-    <script src = "Scripts/logIn.js"></script>
+ <!-- Enable tooltips-->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script src="Scripts/logIn.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
