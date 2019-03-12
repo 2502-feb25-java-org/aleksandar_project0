@@ -7,12 +7,26 @@ label {
   font-size: 20px;
 }
 
+h3 {
+  margin-top: 40px;
+  margin-bottom: -50px;
+  border: 3px solid #ccc;
+}
+
 #revature{
     color: salmon;
 }
 
 #social{
   margin: 10px;
+}
+
+#signup:invalid .button{
+  background: red;
+}
+
+#signup:valid .button{
+  background: skyblue;
 }
 
 /* Style inputs, select elements and textareas */
@@ -74,8 +88,9 @@ input[type=submit] {
 
   
   legend{
-    border: 1px solid white;
-    margin-top: 10px;
+    border: 3px solid white;
+    float: left;
+
   }
   
 
@@ -111,5 +126,6 @@ input[type=submit] {
   .vertical-center {
    margin-top: 10%;
   }
+
 
   

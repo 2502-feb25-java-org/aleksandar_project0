@@ -16,20 +16,13 @@
 
 <body onload="load();">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light stick-top">
-            <a href="https://revature.com/" class="pull-left"><img src="./Media/Revature.png" alt="RevImg"
-                    width="20%"></a>
-            <a class="navbar-brand" href="#">Sign-Up Today!</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light stick-top" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="https://revature.com/"><img src="./Media/Revature.png" alt="RevImg" width="18%"> Sign-Up Today!</a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="intro.html">Home <span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="intro.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="SignUp.html">Sign-Up</a>
-                    <a class="nav-item nav-link" href="logIn.html">Log In</a>
+                    <a class="nav-item nav-link" id = "logIn" href="logIn.html">Log In</a>
                 </div>
             </div>
         </nav>
@@ -100,7 +93,7 @@
                                 <input type="radio" name="faveCandy" id="Twix" oninput="storeRadio();">Twix
                             </div>
                         </fieldset>
-                        <input type="submit" value="Submit">
+                        <input type="submit" class = "button" value="Submit">
                         <input type="reset" value="Reset">
                     </div>
                 </div>
