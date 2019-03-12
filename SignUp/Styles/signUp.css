@@ -21,7 +21,7 @@ input[type=text], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -30,7 +30,7 @@ input[type=email], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -39,7 +39,7 @@ input[type=tel], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    unit-sizing: border-unit;
     resize: vertical;
   }
 
@@ -50,14 +50,14 @@ input[type=number], select, textarea{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    unit-sizing: border-unit;
     resize: vertical;
   }
 
 
   /* Style the submit button */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: skyblue;
     color: white;
     padding: 12px 20px;
     border: rounded;
@@ -67,7 +67,7 @@ input[type=submit] {
   }
 
   input[type=reset] {
-    background-color: #4CAF50;
+    background-color:skyblue;
     color: white;
     padding: 12px 20px;
     border: rounded;
@@ -86,7 +86,7 @@ input[type=submit] {
   /* Style the container */
 .container {
     border-radius: 5px;
-    background-color: salmon;
+    background-color: peachpuff;
     padding: 20px;
   }
 
@@ -110,4 +110,8 @@ input[type=submit] {
     list-style-type: none;
     display: inline;
     margin-right: 30px;
+  }
+
+  .vertical-center {
+   margin-top: 10%;
   }

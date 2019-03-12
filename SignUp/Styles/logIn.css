@@ -51,8 +51,8 @@ html {
     max-width: 450px;
     position: relative;
     padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-unit-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    unit-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     text-align: center;
   }
   
@@ -92,8 +92,8 @@ html {
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
-    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-unit-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    unit-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     margin: 5px 20px 40px 20px;
