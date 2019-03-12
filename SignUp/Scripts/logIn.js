@@ -10,8 +10,8 @@ function confirmLogIn(){
         console.log("Correct");
         window.location.href="snakeGame.html"; 
     } else {
-        console.log("Incorrect");
-        //alert ('Please try again. \nHINT: Forgot your password?');
+        //console.log("Incorrect");
+        alert ('Please try again. \nHINT: Forgot your password?');
     }
     return false;
 }
