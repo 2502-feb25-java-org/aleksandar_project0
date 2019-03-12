@@ -7,6 +7,13 @@ function store() {
     localStorage.setItem(id, value);
 }
 
+function storePlace(addressText){
+    let id = "address";
+    let value = addressText;
+    localStorage.setItem(id, value);
+    console.log(value);
+}
+
 function storeRadio() {
     let id = "faveCandy"; //event wasn't available in firefox
     let value = event.target.id;
@@ -22,8 +29,8 @@ function getStore(id) {
 function getRadio(id) {
     let localValue = localStorage.getItem("faveCandy");
     let element = document.getElementById(localValue);
-    console.log("local ID " + localValue);
-    console.log(element);
+    //console.log("local ID " + localValue);
+    //console.log(element);
     element.checked = true;
 }
 

@@ -60,12 +60,18 @@
                              <!-- Using Places API for Address Autocomplete--> 
                              <label for="address"> <span class="badge badge-pill badge-info">
                                 Address:</span></label>  
-                            <input type="text" id="address" oninput="store();" required/>
+                            <input type="text" id="address" onchange="store();" required/>
                             <script>
                                 var input = document.getElementById('address');
                                 var autocomplete = new google.maps.places.Autocomplete(input, { types: ['(cities)'] });
                                 google.maps.event.addListener(autocomplete, 'place_changed', function () {
                                     var place = autocomplete.getPlace();
+
+                                placeObj = JSON.stringify(place);
+                                formattedObj = JSON.parse(placeObj);
+                                formatted = formattedObj.formatted_address;
+                                storePlace(formatted);
+                                //storePlace(place);
                                 })
                             </script>
 
