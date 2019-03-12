@@ -93,7 +93,7 @@ function draw() {
     ctx.drawImage(fieldImg, 0, 0);
 
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillStyle = (i == 0) ? "green" : "white";
+        ctx.fillStyle = (i == 0) ? "blue" : "white";
         ctx.fillRect(snake[i].x, snake[i].y, unit, unit);
 
         ctx.strokeStyle = "red";
@@ -135,9 +135,10 @@ function draw() {
         clearInterval(game);
         isAlive = "false";
         dead.play();
-        setTimeout(function() {
-            location.reload()
-            },500)
+        //Temporary timeout to reload on hitting the wall
+        setTimeout(function() { alert("Play again!");
+        location.reload();
+        }, 500);
     }
     snake.unshift(newHead);
 
@@ -149,7 +150,7 @@ function draw() {
     ctx.fillText(title, 4.75 * unit, 1.6 * unit);
 }
 
-let game = setInterval(draw, 75);
+let game = setInterval(draw, 100);
 
 /*
 //Main function for game functionality
