@@ -39,5 +39,5 @@ function load() {
     getStore("phonenum");
 }
 
-//get better at logging values and poking around using console commands
+
 
