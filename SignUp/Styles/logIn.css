@@ -262,15 +262,3 @@ html {
     width:60%;
   }
 
-  footer {
-    position: fixed;
-    background-color:papayawhip;
-    text-align: center;
-    padding: 5px;
-    color: rgb(241, 160, 8);
-  }
-  footer li {
-    list-style-type: none;
-    display: inline;
-    margin-right: 30px;
-  }
