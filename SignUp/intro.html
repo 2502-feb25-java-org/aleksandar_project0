@@ -3,9 +3,9 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./Styles/intro.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <meta charset="utf-8">
     <meta id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Home Page </title>
@@ -28,8 +28,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="https://revature.com/" class="pull-left"><img src="./Media/Revature.png" alt = "RevImg" width="20%"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light stick-top">
+        <a href="https://revature.com/" class="pull-left"><img src="./Media/Revature.png" alt="RevImg" width="20%"></a>
         <a class="navbar-brand" href="#">Sign-Up Today!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,7 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="SignUp.html">Sign Up</a>
+                <a class="nav-item nav-link" href="logIn.html">Log In</a>
             </div>
         </div>
     </nav>
@@ -58,16 +59,41 @@
 
         </div>
     </div>
+<!-- Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4 fixed-bottom">
+        <div class="container-fluid padding">
 
-    <footer>
-        <div class="row justify-content-center" id="social">
-            <a href="https://twitter.com/WeAreRevature?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                <img src="./Media/twitter.png" alt="Twitter" width="60px"></a>
-            <a href="https://www.linkedin.com/company/revature/">
-                <img src="./Media/linkedin.png" alt="LinkedIn" width="60px"></a>
-            <a href="https://www.facebook.com/revature/">
-                <img src="./Media/facebook.png" alt="Facebook" width="60px"></a>
+               <!-- Footer Elements -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/revature/">
+                        <em class="fab fa-facebook-f" > </em>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/WeAreRevature?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                        <em class="fab fa-twitter"> </em>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1"  href="https://www.linkedin.com/company/revature/">
+                        <em class="fab fa-linkedin-in"> </em>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1" href = "https://www.instagram.com/teamrevature/">
+                        <em class="fab fa-instagram "> </em>
+                    </a>
+                </li>
+                </li>
+            </ul>
         </div>
+
+
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="**"> Revature.com</a>
+        </div>
+
     </footer>
 
     <!-- Modal -->
@@ -82,8 +108,8 @@
                     </button>
                 </div>
                 <div class="modal-body" id="modaltext">
-                    You don't need more info! Hurry Up and Sign Up! <br><br>
-                    <hr> This message has been approved by Revature.
+                    You don't need more info, hurry along and <a href="SignUp.html">Sign Up!</a> <br><br>
+                    <hr>
                 </div>
                 <div class="modal-footer">
 
@@ -103,7 +129,6 @@
     </div>
 
 
-    <!-- <script src="index.js" ></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

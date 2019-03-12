@@ -1,3 +1,7 @@
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
 #modaltext {
     background-color: azure;
     color:rgb(31, 85, 104);
@@ -7,3 +11,16 @@
 #modalcontent {
     background-color: salmon;
 }
+
+footer {
+    position: fixed;
+    background-color:papayawhip;
+    text-align: center;
+    padding: 5px;
+    color: rgb(241, 160, 8);
+  }
+  footer li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+  }

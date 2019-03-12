@@ -1,5 +1,6 @@
 body{
   background-color: azure;
+  font-family: "Poppins", sans-serif;
 }
 
 label {
@@ -95,4 +96,18 @@ input[type=submit] {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 30px;  
+  }
+
+
+  footer {
+    position: fixed;
+    background-color:papayawhip;
+    text-align: center;
+    padding: 5px;
+    color: rgb(241, 160, 8);
+  }
+  footer li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
   }
