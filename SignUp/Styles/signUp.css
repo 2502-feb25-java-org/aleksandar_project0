@@ -101,11 +101,11 @@ input[type=submit] {
     margin-top: 5px;
   }
 
-  #signup:invalid .button{
+  #myForm:invalid .button{
     background: red;
   }
   
-  #signup:valid .button{
+  #myForm:valid .button{
     background: skyblue;
   }
 

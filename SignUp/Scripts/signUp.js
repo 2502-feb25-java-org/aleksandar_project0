@@ -81,7 +81,7 @@ $("#myForm").submit(function(e){
 });
 
 //This one took a while, openModal() no longer supported, jQuery must be loaded before script calls
-
-function submitFunction() {
-    alert("The form was submitted!");
-  }
+//
+//function submitFunction() {
+  //  alert("The form was submitted!");
+  //}
