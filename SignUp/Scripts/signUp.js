@@ -73,3 +73,15 @@ function checkDuplicate(input) {
         input.setCustomValidity('');
     }
 }
+
+//trigger when form is submitted
+$("#myForm").submit(function(e){
+    $('#myModal').modal('show');
+    return false;
+});
+
+//This one took a while, openModal() no longer supported, jQuery must be loaded before script calls
+
+function submitFunction() {
+    alert("The form was submitted!");
+  }
