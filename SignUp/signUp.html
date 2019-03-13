@@ -14,105 +14,115 @@
     <title> Sign Up </title>
 </head>
 
-<body onload="load();">
+
     <header>
         <script src="./Scripts/navbar.js"></script>
-
-        <h3 class="text-center">Join Today and Be a Learning Animal!</h3>
     </header>
-    <div class="content">
-        <fieldset>
-            <legend id="signup">Sign-Up Required</legend>
-            <div class="vertical-center">
-                <div class="container">
-                    <form id="signup" action="#">
-                        <div class="row align-items-start">
-                            <div class="col-sm-6" id="field1">
-                                <fieldset>
 
-                                    <legend> Contact Info.</legend>
+    <body onload="load(); loadAddress();"></body>
+    <div class="content">
+        <h3 class="text-center">Join Today and Be a Learning Animal!</h3>
+        <div class="vertical-center">
+            <div class="row">
+                    <div class="col-sm" id="formtitle">
+                    <label class = "underlineHover"> Sign-Up Required</label>
+                    </div>
+            </div>
+             <div class="container">
+            <form id="signup" action="#">
+                <div class="row align-items-start">
+                    <div class="col-sm-6">
+                        <fieldset>
+                            <div class="row">
+                                <legend> Contact Info.</legend>
+                                <div class="col-sm">
                                     <label for="firstname"><span class="badge badge-pill badge-info">First Name:
                                         </span></label><input type="text" id="firstname" placeholder="First Name"
                                         oninput="store();" required>
+                                </div>
+                                <div class="col-sm">
                                     <label for=middlename"><span class="badge badge-pill badge-info"> Middle
                                             Name:</span></label><input type="text" id="middlename"
                                         placeholder="Middle Name" oninput="store();">
+                                </div>
+                                <div class="col-sm">
                                     <label for="lastname"><span class="badge badge-pill badge-info"> Last
                                             Name:</span></label><input type="text" id="lastname" placeholder="Last Name"
                                         oninput="store();" required><br>
-                                    <label for="phonenum"><span class="badge badge-pill badge-info">Phone
-                                            Number:</span></label><input type="tel" pattern="[0-9]{9}|[0-9]{10}"
-                                        id="phonenum" placeholder=" 9 or 10 Digit #" oninput="store();" required>
-                                    <label for="email"> <span class="badge badge-pill badge-info">E-mail
-                                            Address:</span></label><input type="email" id="email"
-                                        placeholder="Enter your email" oninput="store();" required><br>
-                                </fieldset>
+                                </div>
                             </div>
+                            <label for="phonenum"><span class="badge badge-pill badge-info">Phone
+                                    Number:</span></label><input type="tel" pattern="[0-9]{9}|[0-9]{10}" id="phonenum"
+                                placeholder=" 9 or 10 Digit #" oninput="store();" required>
+                            <label for="email"> <span class="badge badge-pill badge-info">E-mail
+                                    Address:</span></label><input type="email" id="email" placeholder="Enter your email"
+                                oninput="store();" required><br>
+                        </fieldset>
+                    </div>
 
-                            <div class="col-sm-6" id="field2">
-                                <fieldset>
-                                    <legend> Personal Info.</legend>
-                                    <label for="sex"><span class="badge badge-pill badge-info">Sex:</span></label>
-                                    <select id="sex" oninput="store();" required>
-                                        <option value="" selected disabled hidden>Choose here</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                        <option value="other">Prefer Not to Answer</option>
-                                    </select><br>
-                                    <label for="age"><span class="badge badge-pill badge-info">Age:</span></label><input
-                                        type="number" id="age" id="age" min="16" max="100" placeholder=21
-                                        oninput="store();" required><br>
-                                    <label for="faveCandy"><span class="badge badge-pill badge-info"> Favorite Candy:
-                                        </span></label>
-                                    <div class="candy">
-                                        <input type="radio" name="faveCandy" id="Snickers"
-                                            oninput="storeRadio();">Snickers
-                                        <input type="radio" name="faveCandy" id="Gummy" oninput="storeRadio();">Gummy
-                                        Bears
-                                        <input type="radio" name="faveCandy" default id="Twix"
-                                            oninput="storeRadio();">Twix
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="col-sm-12" id="field3">
-                                <fieldset>
-                                    <legend>Address Info.</legend>
-                                    <!-- Using Places API for Address Autocomplete-->
-                                    <label for="address"> <span class="badge badge-pill badge-info">
-                                            Address (Autofill):</span></label>
-                                    <input type="text" id="address" onchange="store();" required />
-
-                                    <label for="street"> <span class="badge badge-pill badge-info">
-                                            Street:</span></label>
-                                    <input type="text" id="street" onchange="store();" required />
-
-                                    <label for="zipcode"> <span class="badge badge-pill badge-info">
-                                            ZipCode:</span></label>
-                                    <input type="text" pattern="[0-9]{5}" id="zipcode" onchange="store();" required />
-
-                                    <label for="state"> <span class="badge badge-pill badge-info">
-                                            State:</span></label>
-                                    <input type="text" id="state" onchange="store();" required />
-
-                                    <label for="country"> <span class="badge badge-pill badge-info">
-                                            Country:</span></label>
-                                    <input type="text" id="country" onchange="store();" value="United States"
-                                        readonly />
-                                </fieldset>
-
-
-                                <input type="submit" class="button" value="Submit">
-                                <input type="reset" value="Reset" onclick="localStorage.clear();">
-
-
+                    <div class="col-sm-6" id="field2">
+                        <fieldset>
+                            <legend> Personal Info.</legend>
+                            <label for="sex"><span class="badge badge-pill badge-info">Sex:</span></label>
+                            <select id="sex" oninput="store();" required>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="other">Prefer Not to Answer</option>
+                            </select><br>
+                            <label for="age"><span class="badge badge-pill badge-info">Age:</span></label><input
+                                type="number" id="age" id="age" min="16" max="100" placeholder=21 oninput="store();"
+                                required><br>
+                            <label for="faveCandy"><span class="badge badge-pill badge-info"> Favorite Candy:
+                                </span></label>
+                            <div class="candy">
+                                <input type="radio" name="faveCandy" id="Snickers" oninput="storeRadio();">Snickers
+                                <input type="radio" name="faveCandy" id="Gummy" oninput="storeRadio();">Gummy
+                                Bears
+                                <input type="radio" name="faveCandy" id="Twix" oninput="storeRadio();" checked>Twix
+                                <script> localStorage.setItem("faveCandy", "Twix"); </script>
 
                             </div>
-                        </div>
-                    </form>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-12" id="field3" onload="loadAddress()">
+                        <fieldset>
+                            <legend>Address Info.</legend>
+                            <!-- Using Places API for Address Autocomplete-->
+                            <label for="address"> <span class="badge badge-pill badge-info">
+                                    Address (Autofill):</span></label>
+                            <input type="text" id="address" onkeypress="store();" onmouseover="loadAddress();"
+                                required />
+
+                            <label for="street"> <span class="badge badge-pill badge-info">
+                                    Street:</span></label>
+                            <input type="text" id="street" onchange="store();" required />
+
+                            <label for="zipcode"> <span class="badge badge-pill badge-info">
+                                    ZipCode:</span></label>
+                            <input type="text" pattern="[0-9]{5}" id="zipcode" onchange="store();" required />
+
+                            <label for="state"> <span class="badge badge-pill badge-info">
+                                    State:</span></label>
+                            <input type="text" id="state" onchange="store();" required />
+
+                            <label for="country"> <span class="badge badge-pill badge-info">
+                                    Country:</span></label>
+                            <input type="text" id="country" onchange="store();" value="United States" readonly />
+                        </fieldset>
+
+
+                        <input type="submit" class="button" value="Submit">
+                        <input type="reset" value="Reset" onclick="localStorage.clear();">
+
+
+
+                    </div>
                 </div>
-            </div>
-        </fieldset>
+            </form>
+        </div>
+    </div>
     </div>
 
 

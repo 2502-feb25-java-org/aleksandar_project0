@@ -52,7 +52,7 @@ function load() {
     getStore("phonenum");
     getStore("address");
     getStore("middlename");
-
+}
 function loadAddress(){
     getStore("address");
     getStore("zipcode");
@@ -62,5 +62,14 @@ function loadAddress(){
 
 }
 
-
-
+function checkDuplicate(input) {
+    let first = document.getElementById("firstname");
+    let middle = document.getElementById("middlename");
+    let last = document.getElementById("lastname");
+    if (first.value == middle.value || middle.value == last.value || first.value == last.value){
+        input.setCustomValidity('Names cannot be the same.');
+    } else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
+    }
+}

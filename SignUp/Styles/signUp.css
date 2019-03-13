@@ -13,13 +13,32 @@ h3 {
   border: 3px solid #ccc;
 }
 
-#revature{
-    color: salmon;
+#formtitle{
+  text-align: center;
 }
 
-#social{
-  margin: 10px;
+.underlineHover{
+  font-size: 35px;
 }
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
 
 
 /* Style inputs, select elements and textareas */
@@ -68,6 +87,7 @@ input[type=submit] {
     cursor: pointer;
     float: right;
     margin-left: 10px;
+    margin-top: 5px;
   }
 
   input[type=reset] {
@@ -78,6 +98,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    margin-top: 5px;
   }
 
   #signup:invalid .button{
@@ -90,9 +111,10 @@ input[type=submit] {
 
   
   legend{
-    border: 3px solid white;
-    float: left;
-
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-left: 5px;
+    text-align: center;
   }
   
 
@@ -115,7 +137,6 @@ input[type=submit] {
   .vertical-center {
    margin-top: 10%;
   }
-
 
 
 button:focus{
