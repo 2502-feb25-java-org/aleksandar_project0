@@ -1,3 +1,4 @@
+
 body{
     background-color: azure;
 }
@@ -44,3 +45,23 @@ body{
 .contact-form button:focus{
     box-shadow:none;
 }
+
+.list-unstyled
+    display: inline;
+}
+
+
+/*Take vertical height and subtract slightly less than footer height */
+.content{
+    min-height: calc(100vh - 20px);
+    margin-Bottom: 300px; 
+  }
+
+  #contactlogo{
+      float: left;
+      margin-bottom: 5px;
+  }
+
+  h4 {
+      text-align: center;
+  }
