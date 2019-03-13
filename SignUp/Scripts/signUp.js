@@ -68,7 +68,10 @@ function checkDuplicate(input) {
     let last = document.getElementById("lastname");
     //console.log("checking");
     //console.log(first.value);
+    //console.log(middle.value);
+    //console.log(last.value);
     if (first.value == middle.value || middle.value == last.value || first.value == last.value){
+        console.log("sames");
         input.setCustomValidity('Names cannot be the same.');
     } else {
         // input is valid -- reset the error message
