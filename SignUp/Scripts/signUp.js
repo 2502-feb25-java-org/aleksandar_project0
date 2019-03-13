@@ -11,7 +11,13 @@ function storePlace(addressText){
     let id = "address";
     let value = addressText;
     localStorage.setItem(id, value);
-    console.log(value);
+    //console.log(value);
+}
+
+function storeType(object){
+    let id = Object.keys(object).toString();
+    let value = Object.values(object).toString();
+    localStorage.setItem(id, value);
 }
 
 function storeRadio() {
@@ -45,6 +51,15 @@ function load() {
     getStore("email");
     getStore("phonenum");
     getStore("address");
+    getStore("middlename");
+
+function loadAddress(){
+    getStore("address");
+    getStore("zipcode");
+    getStore("street");
+    getStore("country");
+    getStore("state");
+
 }
 
 

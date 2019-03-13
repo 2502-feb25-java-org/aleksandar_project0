@@ -21,13 +21,6 @@ h3 {
   margin: 10px;
 }
 
-#signup:invalid .button{
-  background: red;
-}
-
-#signup:valid .button{
-  background: skyblue;
-}
 
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
@@ -74,6 +67,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    margin-left: 10px;
   }
 
   input[type=reset] {
@@ -84,6 +78,14 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+  }
+
+  #signup:invalid .button{
+    background: red;
+  }
+  
+  #signup:valid .button{
+    background: skyblue;
   }
 
   
@@ -115,4 +117,13 @@ input[type=submit] {
   }
 
 
-  
+
+button:focus{
+    box-shadow:none;
+}
+
+/*Take vertical height and subtract slightly less than footer height */
+.content{
+  min-height: calc(100vh - 50px);
+  margin-Bottom: 150px; 
+}

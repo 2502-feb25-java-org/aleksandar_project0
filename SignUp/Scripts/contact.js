@@ -4,13 +4,10 @@ function store() {
     localStorage.setItem(id, value);
 }
 
-$('#contact-form').on('submit', function () {
+//trigger when form is submitted
+$("#myForm").submit(function(e){
     $('#myModal').modal('show');
     return false;
-})
-$(document).ready(function() {
-    $('#contact-form').on('submit', function(e){
-        $('#myModal').modal('show');
-        e.preventDefault();
-    });
-  });
+});
+
+//This one took a while, openModal() no longer supported, jQuery must be loaded before script calls

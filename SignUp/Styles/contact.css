@@ -30,7 +30,7 @@ body{
     font-weight:600;
 }
  /* Style the submit button */
- input[type=submit] {
+ button[type=submit] {
     background-color: skyblue;
     color: white;
     padding: 12px 20px;
