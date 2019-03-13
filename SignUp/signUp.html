@@ -48,7 +48,7 @@
                                 <div class="col-sm">
                                     <label for="lastname"><span class="badge badge-pill badge-info"> Last
                                             Name:</span></label><input type="text" id="lastname" placeholder="Last Name"
-                                        oninput="store();" onkeyup = "checkDuplicate(this);" onchange = "checkDuplicate(this);"  onmouseover = "checkDuplicate(this);" required><br>
+                                        oninput="store();" onkeyup = "checkDuplicate(this);" onchange = "checkDuplicate(this);"  onmouseover = "checkDuplicate(this);" required>
                                 </div>
                             </div>
 
@@ -157,7 +157,9 @@
         var place = autocomplete.getPlace();
         var zipCode, route, admin1, country; //location variables
         var obj = { type: 'value' };
+        var placeObj = JSON.stringify(place);
         var formattedObj = JSON.parse(placeObj);
+
         var formatted = formattedObj.formatted_address;
         //Retrieve the length of address components
         var addressLen = formattedObj.address_components.length;

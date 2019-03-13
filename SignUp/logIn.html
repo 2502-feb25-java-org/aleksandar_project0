@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body onload = "getUser()">
         <script src = "./Scripts/navbar.js"></script>
 
 
@@ -33,6 +33,9 @@
                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
                 <input type="submit" class="fadeIn fourth" value="Log In">
             </form>
+            <div class="checkbox">
+                <label><input type="checkbox" id = "remember" onchange = "handleChange(this)"> Remember me</label>
+              </div>
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
