@@ -3,4 +3,4 @@
 >We Are Learning Animals.
 
 ## Basic SignUp Template using Bootstrap 4 in SignUp folder
---1. Project 0: Revature Sign-Up Webpage with Hidden Snake Game
+	* Project 0: Revature Sign-Up Webpage with Hidden Snake Game
