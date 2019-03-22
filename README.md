@@ -1,5 +1,5 @@
 # aleksandar_project0
-**Aleksandar Antonov Projects for Revature Java Training**
+**Aleksandar Antonov Project 0 for Revature Java Training**
 >We Are Learning Animals.
 
 ## Basic SignUp Template using Bootstrap 4 in SignUp folder
