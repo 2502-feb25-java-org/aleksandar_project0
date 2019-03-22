@@ -55,8 +55,28 @@ function loadLandingView(){
 }
 
 function loadRegisterView(){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 && xhr.responseText){
+			$('#view').html(xhr.responseText);
+			$('#goToLogin').on('click', loadLoginView);
+			
+			//make sure that username is unique before allowing user to submit 
+			$('#username').on('blur', validateUser);
+			
+			//create new user 
+			$('#addUser').on('click', addUser);
+		}
+	}
+	xhr.open("GET", "registration.view");
+	xhr.send();
 	
 }
+
+function validateUser(){
+	//send request to make sure that username is unique
+}
+
 
 function validateString(str){
 	if(str == null || str == ''){ // an invalid string
@@ -102,6 +122,7 @@ function loginUser(){
 	xhr.send(JSON.stringify(user));
 	}else{
 		// user entered null or empty string; avoid sending empty data server
+		$('#message').html('Please enter valid username and password!');
 		
 	}
 }

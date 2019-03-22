@@ -40,6 +40,8 @@ public class UserServlet extends HttpServlet {
 		writer.write(json);
 	}
 
+	
+	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
